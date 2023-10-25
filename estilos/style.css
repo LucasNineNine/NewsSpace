@@ -1,0 +1,484 @@
+/*@font-face{
+    src: url('nome da font') format('');
+}*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --cor1: #4C4C4C;
+    --cor2: #636363;
+    --cor3: #85C7F2;
+    --cor4: #DBDBDB;
+    --cor5: #D1D1D1;
+    --cor-first_column: #d10707;
+    --cor-second_column: limegreen;
+    --cor-third_column: orangered;
+    --cor-facebook: #2962ff;
+    --cor-twitter: #1d9bf0;
+    --cor-youtube: #ff0000;
+    --cor-instagram: #C13584;
+    --cor-linkedIn: #2867B2;
+    --cor-gitHub: #333333;
+    --cor-whatsapp: #00e676;
+    --cor-whiteSmoke: whitesmoke;
+    --cor-nav-hover: #858585;
+
+    --font-geral: 'Segoe UI';
+}
+
+body{
+    font-family: var(--font-geral);
+}
+a{
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+/*ADS----*/
+.ads{
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3em;
+    color: rgb(148, 148, 148);
+    margin: 30px auto;
+    max-width: 1250px;
+    min-height: 280px;
+    border-radius: 10px;
+    background: lightgray;
+} 
+/*.position_sticky{
+    position: sticky;
+    top: 0px;
+}*/
+
+/*DIV SUPER_HEADER*/
+.super_header{
+    height: 50px;
+    background-color: var(--cor-whiteSmoke);
+    border-bottom: 2px solid var(--cor-whiteSmoke);
+    
+}
+.super_header .title_container{
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--cor1);
+    width: 50%;
+}
+.super_header .title_container h1{
+    color: var(--cor1);
+}
+.super_header .social_media{
+    width: 50%;
+}
+.super_header .social_media{
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.super_header .social_media a.facebook path{
+    color: var(--cor-facebook);
+}
+.super_header .social_media a.twitter path{
+    color: var(--cor-twitter);
+}
+.super_header .social_media a.youtube path{
+    color: var(--cor-youtube);
+}
+.super_header .social_media a.instagram path{
+    color: var(--cor-instagram);
+}
+.super_header .social_media a.linkedin path{
+    color: var(--cor-linkedIn);
+}
+.super_header .social_media a.github path{
+    color: var(--cor-gitHub);
+}
+.super_header .social_media a.whatsapp path{
+    color: var(--cor-whatsapp);
+}
+
+/*HEADER-------------------------------*/
+.header{
+    background-color: var(--cor2);
+}
+.header .header_header{
+    align-items: center;
+    justify-content: center;
+}
+.header .logo{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60px;
+}
+.header .logo h1{
+    margin-left: -62px;
+}
+.header .search{
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 50%;
+    height: 60px;
+}
+.header .header_header .search input{
+    margin: auto 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+}
+.header .header_header .search input:focus{
+    outline-width: 0;
+}
+
+/*HEADER NAV*/
+.nav{
+    border-top: 2px solid var(--cor-headers);
+    padding: 10px 0px;
+}
+.nav ul{
+    font-weight: bold;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.nav ul li a{
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 5px;
+}
+.nav ul li a:hover{
+    padding: 5px;
+    background-color: var(--cor-nav-hover);
+}
+
+/*TODAS SECTIONS*/
+section.sections{
+    margin: 30px auto;
+    max-width: 1250px;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*SECTION MAIN-------------------------------------------*/
+section.section_main{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*section.section_main img{
+    
+}*/
+section.section_main .first_column{
+    flex: 2;
+    max-width: 650px;
+    min-width: 320px;
+}
+section.section_main .second_column, .third_column{
+    flex: 1;
+    max-width: 280px;
+    min-width: 140px;
+}
+
+/*FIRST COLUMN----------------*/
+.first_column{
+    border-right: 1px solid lightgray;
+}
+
+/*first news*/
+.first_column figure{
+    max-width: 610px;
+}
+.first_column figure figcaption{
+    color: var(--cor-first_column);
+    font-weight: bold;
+}
+.first_column_first_news_secondary{
+    max-width: 610px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+}
+.first_column .first_column_first_news_secondary ul li::before{
+    padding-right: 20px;
+    font-size: 15px;
+    content: '●';
+    color: var(--cor-first_column);
+}
+.first_column_first_news_secondary ul{
+    margin-bottom: 30px;
+}
+
+/*part-02 other news*/
+.first_column .part_02{
+    max-width: 610px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.first_column .part_02 .all_news{
+    margin-bottom: 20px;
+}
+.first_column .part_02 figure{
+    max-width: 192px;
+}
+.first_column .part_02 .all_subtitle_container{
+    max-width: 192px;
+} 
+
+/*SECOND COLUMN---------------*/
+.second_column .all_news{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.second_column figure figcaption{
+    color: var(--cor-second_column);
+    font-weight: bold;
+}
+.second_column .all_subtitle_container{
+    justify-content: center;
+}
+.second_column .all_subtitle_container .all_subtitle{
+    max-width: 240px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+.second_column .second_column_first_news_secondary, .second_column_third_news_secondary{
+    margin-top: 10px;
+    max-width: 240px;
+}
+.second_column .second_column_first_news_secondary ul li::before, .second_column_third_news_secondary ul li::before{
+    padding-right: 20px;
+    font-size: 15px;
+    content: '●';
+    color: var(--cor-second_column);
+}
+
+/*THIRD COLUMN--------------------*/
+.third_column{
+    border-left: 1px solid lightgray;
+}
+.third_column .all_news{
+    margin-bottom: 30px;
+}
+.third_column figure figcaption{
+    color: var(--cor-third_column);
+    font-weight: bold;
+}
+.third_column .all_img, .all_subtitle_container, .third_column_second_news_secondary{
+    justify-content: flex-end;
+}
+.third_column .all_subtitle{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    max-width: 240px;
+}
+.third_column .third_column_second_news_secondary li{
+    max-width: 240px;
+}
+.third_column .third_column_second_news_secondary li::before{
+    padding-right: 20px;
+    font-size: 15px;
+    content: '●';
+    color: var(--cor-third_column);
+}
+
+/*SECTION SPORTS---------------------*/
+
+/*SPORTS BIG ITEM--*/
+.section_sports .section_sports_big{
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.section_sports .box_container_titulo_sports{
+    position: relative;
+    margin-bottom: 20px;
+}
+.section_sports .container_titulo_sports::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #eee;
+    position: absolute;
+    top: 60%;
+}
+.section_sports .container_titulo_sports h1::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: rgb(38, 204, 38);
+    margin-bottom: 20px;
+    z-index: 99;
+    position: relative;
+}
+.section_sports_big .section_sports_big_item{
+    padding-bottom: 20px;
+    flex-direction: column;
+    
+    border-bottom: 4px solid rgb(38, 204, 38);
+    border-radius: 3px;
+}
+.section_sports_big .section_sports_big_item:nth-child(2), .section_sports_big_item:nth-child(3){
+    margin-left: 20px;
+}
+.section_sports_big .section_sports_big_item figure{ 
+    position: relative;
+    /*margin-bottom: 20px; usado para afastar a borda verde dos big_itens. Não necessario pois o padding-bottom foi colocado no => .section_sports_big .section_sports_big_item{}*/
+    transition: .5s;
+    min-width: 300px;   /*Caso dê algum problema com esse -width- use o => .section_sports_big .section_sports_big_item figure img{ min-width:300px; }*/
+}
+.section_sports_big .section_sports_big_item figure:hover{
+    transition: .5s;
+    transform: scale(1.05, 1.05);
+    /*filter: brightness(90%);   LEMBRE-SE DE VOLTAR NESSA MODIFICAÇAO*/
+    cursor: pointer;
+}
+.section_sports_big .section_sports_big_item figure .shadow{
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent 30%, rgb(12, 11, 11));
+}
+.section_sports_big .section_sports_big_item figure h4{
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 10px;
+    margin-bottom: 35px;
+}
+.section_sports_big .section_sports_big_item figure .play{
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.section_sports_big .section_sports_big_item figure .play span:first-child{
+    color: black;
+    background: white;
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin: 0px 10px 8px 10px;
+}
+
+/*SPORTS LITTLE ITEM*/
+.section_sports_little{
+    flex-wrap: wrap;
+}
+.section_sports_little .section_sports_little_item{
+    max-width: 390px;
+    min-width: 140px;
+}
+.section_sports_little .section_sports_little_item:nth-child(2), .section_sports_little_item:nth-child(3), .section_sports_little_item:nth-child(5), .section_sports_little_item:nth-child(6){
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.section_sports_little_item figure{
+    position: relative;
+    max-width: 201.5px;
+    min-width: 140px;
+    transition: .5s;
+}
+.section_sports_little_item figure:hover{
+    transition: .5s;
+    transform: scale(1.1, 1.1);
+}
+.section_sports_little_item figure .shadow{
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent 30%, rgb(12, 11, 11));
+    opacity: 50%;
+    z-index: 99;
+}
+.section_sports_little_item figure .shadow:hover{
+    transition: .5s;
+    background: linear-gradient(180deg, transparent 30%, rgb(12, 11, 11));
+    opacity: 90%;
+    z-index: 99;
+}
+.section_sports_little_item .section_sports_little_item_description{
+    margin-left: 12px;
+    max-width: 189.5px;
+    min-width: 150px;
+}
+.section_sports_little_item .section_sports_little_item_description h4{
+    margin-bottom: 5px;
+    border-bottom: 3px solid rgb(38, 204, 38);
+    border-radius: 3px;
+}
+
+/*ENTRETENIMENTO*/
+.section_entertainment .box_container_titulo_entertainment{
+    position: relative;
+    margin-bottom: 20px;
+}
+.section_entertainment .container_titulo_entertainment::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #eee;
+    position: absolute;
+    top: 60%;
+}
+.section_entertainment h1::after{
+    content: '';
+    display: block; 
+    background: red;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    z-index: 99;
+    position: relative;
+}
+
+/*ENTRETENIMENTO BIG*/
+.section_entertainment_big{
+    justify-content: space-between;
+}
+.section_entertainment .section_entertainment_big .section_entertainment_big_item{ 
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 10px;
+    background-color: #fb3030;
+}
+.section_entertainment_big figure{
+    max-width: 390px;
+}
+.section_entertainment_big figure figcaption{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/*ENTRETENIMENTO LITTLE*/
+.section_entertainment_little{
+    justify-content: space-between;
+}
+.section_entertainment .section_entertainment_little .section_entertaiment_little_item{
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 10px;
+    background-color: #fb3030;
+}
+.section_entertainment_little figure{
+    max-width: 200px;
+}
